@@ -25,9 +25,7 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
-    /* left: 50%; */
     display: flex;
-    /* transform: translate(-50%, -50%); */
 }
 
 .navigation__label {
@@ -93,4 +91,31 @@ input[name="input__radio"] {
 
 #input4:checked~.slide1 {
     margin-left: -75%;
+}
+
+#input1:checked~.navigation label[for="input1"],
+#input2:checked~.navigation label[for="input2"],
+#input3:checked~.navigation label[for="input3"],
+#input4:checked~.navigation label[for="input4"] {
+    background-color: #333;
+    border: 2px solid rgb(121, 141, 231);
+    height: 11px;
+    width: 11px;
+}
+
+#input1:checked~.navigation label[for="input1"]:active,
+#input2:checked~.navigation label[for="input2"]:active,
+#input3:checked~.navigation label[for="input3"]:active,
+#input4:checked~.navigation label[for="input4"]:active {
+    background-color: #333;
+    border: 2px solid rgb(121, 141, 231);
+    height: 11px;
+    width: 11px;
+}
+
+#input1:checked~.navigation label[for="input1"]:hover,
+#input2:checked~.navigation label[for="input2"]:hover,
+#input3:checked~.navigation label[for="input3"]:hover,
+#input4:checked~.navigation label[for="input4"]:hover {
+    border: 2px solid #fff;
 }
