@@ -15,14 +15,14 @@ body {
     width: 800px;
     max-height: 100%;
     overflow-x: hidden;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .navigation {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
     display: flex;
@@ -47,7 +47,7 @@ body {
 }
 
 input[name="input__radio"] {
-    position: absolute;
+    position: fixed;
     visibility: hidden;
 }
 
@@ -125,13 +125,13 @@ input[name="input__radio"] {
         width: 95%;
         max-height: 100%;
         overflow-x: hidden;
-        position: absolute;
+        position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
     .navigation {
-        position: absolute;
+        position: fixed;
         bottom: 5%;
         left: 50%;
         display: flex;
