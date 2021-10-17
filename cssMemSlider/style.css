@@ -119,3 +119,53 @@ input[name="input__radio"] {
 #input4:checked~.navigation label[for="input4"]:hover {
     border: 2px solid #fff;
 }
+
+@media only screen and (max-width: 820px) {
+    .slider {
+        width: 95%;
+        max-height: 100%;
+        overflow-x: hidden;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .navigation {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        display: flex;
+        justify-content: center;
+        transform: translate(-50%, -50%);
+    }
+    .slide__text {
+        padding-top: 8%;
+    }
+}
+
+@media only screen and (max-width: 624px) {
+    .navigation {
+        bottom: 14%;
+    }
+    .slide__text {
+        padding-top: 14%;
+    }
+}
+
+@media only screen and (max-width: 315px) {
+    .navigation {
+        bottom: 25%;
+    }
+}
+
+@media only screen and (max-height: 414px) {
+    .navigation {
+        bottom: -16%;
+    }
+}
+
+@media only screen and (max-height: 375px) {
+    .navigation {
+        bottom: -40%;
+    }
+}
